@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bikini Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo RBX store.jpg" alt="Logo Website">
+        <p>RBX Store</p>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="https://wa.me/85183792518">Kontak Admin</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <h1>RBX Store</h1>
+        <p>Temukan Gempass favoritmu di sini!</p>
+    </header>
+ 
+
+    <section class="product-list">
+        <div class="product" id="product1">
+            <img src="custom plat.jpg" alt="Deskripsi Gambar">
+            <h3>Custom Plat</h3>
+            <p>Harga: Rp 5.000</p>
+            <button class="order-button" onclick="showOrderForm('custom plat', 5000)">Pesan</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="darurat.jpg" alt="Bikini 2">
+            <h3>darurat gampass</h3>
+            <p>Harga: Rp 14.000</p>
+            <button class="order-button" onclick="showOrderForm('Gempass darurat', 14000)">Pesan</button>
+        </div>
+        <!-- Tambahkan produk lainnya di sini -->
+        <div class="product" id="product3">
+            <img src="import.jpg" alt="Bikini 2">
+            <h3>Rare imports</h3>
+            <p>Harga: Rp 19.000</p>
+            <button class="order-button" onclick="showOrderForm('Rare imports', 19000)">Pesan</button>
+        </div>
+        <div class="product" id="product4">
+            <img src="bagasi awnable car.jpg" alt="Bikini 2">
+            <h3>garasi awnable Car</h3>
+            <p>Harga: Rp 9.000</p>
+            <button class="order-button" onclick="showOrderForm('garasi awnable cars', 9000)">Pesan</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="custom-color-720396.webp" alt="Bikini 2">
+            <h3>custom color</h3>
+            <p>Harga: Rp 6.000</p>
+            <button class="order-button" onclick="showOrderForm('custom color', 6000)">Pesan</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="2x paychek.jpg" alt="Bikini 2">
+            <h3>2x paychek</h3>
+            <p>Harga: Rp 40.000</p>
+            <button class="order-button" onclick="showOrderForm('2x paychek', 40000)">Pesan</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="luxury hause.jpg" alt="Bikini 2">
+            <h3>luxury hause</h3>
+            <p>Harga: Rp 8.000</p>
+            <button class="order-button" onclick="showOrderForm('luxury hause', 8000)">Pesan</button>
+        </div>
+    </section>
+
+    <!-- Form untuk input nama dan alamat -->
+    <section id="order-form" style="display:none;">
+        <h2>isi pesanan kalian</h2>
+        <label for="name">Nama Roblox:</label>
+        <input type="text" id="name" placeholder="Masukkan Nama roblox kalian" required>
+
+        <label for="address">Alamat no whatsapp:</label>
+        <textarea id="address" placeholder="Masukkan no whatsapp" required></textarea>
+
+        <button class="order-button" onclick="order()">Kirim Pesanan</button>
+        <button class="order-button" onclick="closeForm()">Batal</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RBX Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
